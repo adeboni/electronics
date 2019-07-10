@@ -1,0 +1,13 @@
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\WaspCannonClient.exe.config
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\WaspCannonClient.exe
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\WaspCannonClient.pdb
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\obj\Debug\WaspCannonClient.csprojAssemblyReference.cache
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\obj\Debug\WaspCannonClient.csproj.CoreCompileInputs.cache
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\obj\Debug\WaspCannonClient.exe
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\obj\Debug\WaspCannonClient.pdb
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\SharpDX.dll
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\SharpDX.XInput.dll
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\SharpDX.pdb
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\SharpDX.XInput.pdb
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\bin\Debug\SharpDX.XInput.xml
+c:\users\alex\source\repos\WaspCannonClient\WaspCannonClient\obj\Debug\WaspCannonClient.csproj.CopyComplete
