@@ -1,4 +1,4 @@
-This repository stores code for various Arduino/other microcontroller projects I've made
+This repository stores code for various electronics projects I've made
 
 * Wasp Cannon: A wifi-enabled water cannon for shooting water at wasps on my balcony
 * CV Glove: A glove with flex sensors on fingers that output control voltages for eurorack modules
