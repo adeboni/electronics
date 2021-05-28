@@ -6,3 +6,4 @@ This repository stores code for various Arduino/other microcontroller projects I
 * AQI Monitor: Simple air quality monitor using a Honeywell HPM sensors
 * Atari Controller: Custom Atari 2600 controller with an analog joystick
 * Camera Remote: Wireless camera shutter control
+* Gas Sensor: A generic MQ gas sensor board with LED indicators
