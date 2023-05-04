@@ -7,3 +7,4 @@ This repository stores code for various electronics projects I've made
 * Atari Controller: Custom Atari 2600 controller with an analog joystick
 * Camera Remote: Wireless camera shutter control
 * Gas Sensor: A generic MQ gas sensor board with LED indicators
+* PS2 Drone Controller: Lets you control quadcopters with a Bluetooth PS2 controller
