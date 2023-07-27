@@ -1,0 +1,7 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+D1,D_DO-35_SOD27_P7.62mm_Horizontal,1,1N4148,
+"F1, F2, F3",Fuseholder_Blade_Mini_Keystone_3568,3,Fuse,
+"H1, H2, H3, H4",MountingHole_3.2mm_M3,4,MountingHole,
+J4,SolderWire-1sqmm_1x06_P5.4mm_D1.4mm_OD2.7mm_Relief,1,Conn_01x06,
+J5,SolderWire-1sqmm_1x01_D1.4mm_OD2.7mm_Relief,1,Conn_01x01,
+RL1,Relay_DPDT_Omron_G2RL,1,G2RL-24-DC12,
