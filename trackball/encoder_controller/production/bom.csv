@@ -1,0 +1,4 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+"J1, J10, J11, J6, J8, J9",SolderWire-0.5sqmm_1x01_D0.9mm_OD2.1mm_Relief,6,Conn_01x01,
+"SW1, SW2, SW3",SW_Cherry_MX_1.00u_PCB,3,SW_Push,
+U1,Sparkfun_Pro_Micro,1,Sparkfun_Pro_Micro,
