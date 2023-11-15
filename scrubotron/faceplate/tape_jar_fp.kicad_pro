@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.1,
-          "height": 3.0,
-          "width": 3.0
+          "drill": 6.5,
+          "height": 8.2,
+          "width": 8.2
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -172,8 +172,7 @@
         }
       ],
       "track_widths": [
-        0.0,
-        2.0
+        0.0
       ],
       "via_dimensions": [
         {
@@ -406,7 +405,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "fiat_light_relay.kicad_pro",
+    "filename": "tape_jar_fp.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -483,7 +482,7 @@
   },
   "sheets": [
     [
-      "32410141-37b1-4033-943b-8e0e587454af",
+      "0112a7df-c1e3-4856-8d14-4ff258be18c2",
       ""
     ]
   ],
