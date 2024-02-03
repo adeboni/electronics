@@ -1,12 +1,25 @@
 #include "RFM69.h"
 
+#define SET_PIN   24
+#define UNSET_PIN 25
+#define RELAY_LED 5
+
 RFM69 radio;
 
 void setup() {
   Serial.begin(115200);
-  while (!Serial) delay(1);
+  //while (!Serial) delay(1); //remove
+  
   pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(RELAY_LED, OUTPUT);
+  pinMode(SET_PIN, OUTPUT);
+  pinMode(UNSET_PIN, OUTPUT);
+
   digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(RELAY_LED, LOW);
+  digitalWrite(SET_PIN, LOW);
+  digitalWrite(UNSET_PIN, LOW);
+  
   radio.initialize();
   Serial.println("Radio started");
 }
