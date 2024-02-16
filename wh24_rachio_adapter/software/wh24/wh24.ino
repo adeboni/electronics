@@ -7,15 +7,15 @@
 #define RELAY_LED 5
 
 typedef struct {
-    float level;
-    unsigned long time;
+  float level;
+  unsigned long time;
 } rain_t;
 
 RFM69 radio;
 cppQueue queue(sizeof(rain_t), 6000, FIFO);
 float rain_level = -1;
 unsigned long water_stop_end = 0;
-bool relay_on = false;
+bool water_on = false;
 
 void setup() { 
   pinMode(LED_BUILTIN, OUTPUT);
@@ -27,6 +27,8 @@ void setup() {
   digitalWrite(RELAY_LED, LOW);
   digitalWrite(SET_PIN, LOW);
   digitalWrite(UNSET_PIN, LOW);
+
+  turn_water_on();
 
   Serial.begin(115200);
   //while (!Serial) delay(1);
@@ -75,6 +77,7 @@ bool decode() {
   int light_raw       = radio.DATA[12] << 16 | radio.DATA[13] << 8 | radio.DATA[14]; // 0xffffff if invalid
   double light_lux    = light_raw * 0.1;                                             // range 0.0-300000.0lux
 
+  Serial.println("-----------------------------");
   Serial.print("id:             "); Serial.println(id);
   Serial.print("wind_dir:       "); Serial.println(wind_dir);
   Serial.print("low_battery:    "); Serial.println(low_battery);
@@ -125,18 +128,10 @@ void updateOutputs() {
   rain_t new_measurement = {rain_level, curr_time};
   queue.push(&new_measurement);
 
-  if (!relay_on && water_stop_end > curr_time) {
-    relay_on = true;
-    digitalWrite(UNSET_PIN, HIGH);
-    delay(500);
-    digitalWrite(UNSET_PIN, LOW);
-  } else if (relay_on && water_stop_end < curr_time) {
-    relay_on = false;
-    digitalWrite(SET_PIN, HIGH);
-    delay(500);
-    digitalWrite(SET_PIN, LOW);
-  }
-  digitalWrite(RELAY_LED, relay_on ? HIGH : LOW);
+  if (water_on && water_stop_end > curr_time) 
+	turn_water_off();
+  else if (!water_on && water_stop_end < curr_time)
+	turn_water_on();
 }
 
 void loop() {
@@ -155,4 +150,22 @@ void blink(int pin, int delay_ms, int loops) {
     digitalWrite(pin, HIGH);
     delay(delay_ms);
   }
+}
+
+void turn_water_off() {
+  Serial.println("Turning water off");
+  water_on = false;
+  digitalWrite(RELAY_LED, HIGH);
+  digitalWrite(UNSET_PIN, HIGH);
+  delay(500);
+  digitalWrite(UNSET_PIN, LOW);
+}
+
+void turn_water_on() {
+  Serial.println("Turning water on");
+  water_on = true;
+  digitalWrite(RELAY_LED, LOW);
+  digitalWrite(SET_PIN, HIGH);
+  delay(500);
+  digitalWrite(SET_PIN, LOW);
 }
