@@ -16,6 +16,7 @@ cppQueue queue(sizeof(rain_t), 6000, FIFO);
 float rain_level = -1;
 unsigned long water_stop_end = 0;
 bool water_on = false;
+int num_items = 0;
 
 void setup() { 
   pinMode(LED_BUILTIN, OUTPUT);
@@ -103,35 +104,37 @@ bool decode() {
 
 void updateOutputs() {
   unsigned long curr_time = millis();
+  rain_t new_measurement = {rain_level, curr_time};
+  queue.push(&new_measurement);
+  num_items++;
+
   rain_t r;
   queue.peek(&r);
-  while (curr_time - r.time > DAY_MS) {
+  while (num_items > 1 && curr_time - r.time > DAY_MS) {
     queue.pop(&r);
     queue.peek(&r);
+    num_items--;
   }
 
-  //stop watering for 4 days if it rained over an inch in at least 12 hours
-  if (curr_time - r.time > DAY_MS / 2UL && rain_level - r.level > 25.4) { 
+  //stop watering for 4 days if it rained over 12 mm in at least 12 hours
+  if (curr_time - r.time > DAY_MS / 2UL && rain_level - r.level > 12) { 
     water_stop_end = curr_time + DAY_MS * 4UL;
   } else {
     for (int i = 0; i < queue.getCount(); i++) {
       queue.peekIdx(&r, i);
       if (curr_time - r.time < DAY_MS / 24UL) {
-        //stop watering for 2 days if it rained over an 3 mm in 1 hour
+        //stop watering for 3 days if it rained over an 3 mm in 1 hour
         if (rain_level - r.level > 3) 
-          water_stop_end = curr_time + DAY_MS * 2UL;
+          water_stop_end = curr_time + DAY_MS * 3UL;
         break;
       }
     }
   }
 
-  rain_t new_measurement = {rain_level, curr_time};
-  queue.push(&new_measurement);
-
-  if (water_on && water_stop_end > curr_time) 
-	turn_water_off();
-  else if (!water_on && water_stop_end < curr_time)
-	turn_water_on();
+  if (water_stop_end > curr_time) 
+	  turn_water_off();
+  else
+	  turn_water_on();
 }
 
 void loop() {
@@ -153,6 +156,7 @@ void blink(int pin, int delay_ms, int loops) {
 }
 
 void turn_water_off() {
+  if (!water_on) return;
   Serial.println("Turning water off");
   water_on = false;
   digitalWrite(RELAY_LED, HIGH);
@@ -162,6 +166,7 @@ void turn_water_off() {
 }
 
 void turn_water_on() {
+  if (water_on) return;
   Serial.println("Turning water on");
   water_on = true;
   digitalWrite(RELAY_LED, LOW);
