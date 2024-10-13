@@ -18,15 +18,15 @@ class WandServer():
         self.watchdog_thread = threading.Thread(target=self._watchdog, daemon=True)
         self.watchdog_thread.start()
 
-    def get_connected_wands(self):
+    @property
+    def connected_wands(self):
         return [w for w in self.wands.values() if w.connected]
         
     def wait_for_wand(self):
         while self.active_wand is None:
             time.sleep(0.5)
-            connected_wands = self.get_connected_wands()
-            if len(connected_wands) > 0:
-                self.active_wand = connected_wands[0]
+            if len(self.connected_wands) > 0:
+                self.active_wand = self.connected_wands[0]
                 print(f"Active wand is {self.active_wand.address}")
 
     def start_udp(self) -> None:

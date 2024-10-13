@@ -20,3 +20,5 @@ while True:
 
 with open("points.json", "w") as outfile: 
     json.dump(data, outfile)
+
+print("Done. You can open the points.json file and rename the target locations.")

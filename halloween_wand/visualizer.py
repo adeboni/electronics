@@ -21,8 +21,9 @@ data = None
 if os.path.isfile("points.json"):
     with open("points.json") as f:
         data = json.load(f)
-    for v in data.values():
+    for i, v in data.items():
         ax.plot([v[0]], [v[1]], [v[2]], c='k', linestyle='', marker='o', alpha=0.2)
+        ax.text(v[0], v[1], v[2], str(i))
     
 lines = sum([ax.plot([], [], [], c=c) for c in ['r', 'g', 'b']], [])
 endpoints = np.array([[-0.25, 0, 0], [0, -1, 0], [0, 0, -0.25]])
