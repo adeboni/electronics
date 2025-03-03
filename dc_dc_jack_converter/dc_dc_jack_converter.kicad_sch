@@ -1,0 +1,999 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 3e172b6e-3533-4e9e-936a-a37c5efa487e)
+
+  (paper "A4")
+
+  (lib_symbols
+    (symbol "Connector:Barrel_Jack_Switch" (pin_names hide) (in_bom yes) (on_board yes)
+      (property "Reference" "J" (at 0 5.334 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Barrel_Jack_Switch" (at 0 -5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 1.27 -1.016 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 1.27 -1.016 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "DC power barrel jack connector" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "DC Barrel Jack with an internal switch" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "BarrelJack*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Barrel_Jack_Switch_0_1"
+        (rectangle (start -5.08 3.81) (end 5.08 -3.81)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (arc (start -3.302 3.175) (mid -3.9343 2.54) (end -3.302 1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (arc (start -3.302 3.175) (mid -3.9343 2.54) (end -3.302 1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type outline))
+        )
+        (polyline
+          (pts
+            (xy 1.27 -2.286)
+            (xy 1.905 -1.651)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 5.08 2.54)
+            (xy 3.81 2.54)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 5.08 0)
+            (xy 1.27 0)
+            (xy 1.27 -2.286)
+            (xy 0.635 -1.651)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -3.81 -2.54)
+            (xy -2.54 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -2.54)
+            (xy 2.54 -2.54)
+            (xy 5.08 -2.54)
+          )
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (rectangle (start 3.683 3.175) (end -3.302 1.905)
+          (stroke (width 0.254) (type default))
+          (fill (type outline))
+        )
+      )
+      (symbol "Barrel_Jack_Switch_1_1"
+        (pin passive line (at 7.62 2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 -2.54 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 7.62 0 180) (length 2.54)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Device:C" (pin_numbers hide) (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "C" (at 0.635 2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "C" (at 0.635 -2.54 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0.9652 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "cap capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Unpolarized capacitor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "C_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762)
+          )
+          (stroke (width 0.508) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "C_1_1"
+        (pin passive line (at 0 3.81 270) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 90) (length 2.794)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "PCM_4ms_Power-symbol:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+12V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+12V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+12V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+12V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Regulator_Switching:R-783.3-1.0" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
+      (property "Reference" "U" (at -3.81 3.175 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "R-783.3-1.0" (at 0 3.175 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" (at 1.27 -6.35 0)
+        (effects (font (size 1.27 1.27) italic) (justify left) hide)
+      )
+      (property "Datasheet" "https://www.recom-power.com/pdf/Innoline/R-78xx-1.0.pdf" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "dc-dc recom Step-Down DC/DC-Regulator" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "1A Step-Down DC/DC-Regulator, 4.75-18V input, 3.3V fixed Output Voltage, LM78xx replacement, -40°C to +85°C, SIP3" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Converter*DCDC*RECOM*R*78E*0.5*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R-783.3-1.0_0_1"
+        (rectangle (start -5.08 1.905) (end 5.08 -5.08)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+      )
+      (symbol "R-783.3-1.0_1_1"
+        (pin power_in line (at -7.62 0 0) (length 2.54)
+          (name "IN" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_in line (at 0 -7.62 90) (length 2.54)
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin power_out line (at 7.62 0 180) (length 2.54)
+          (name "OUT" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+5V" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "power-flag" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+5V_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+5V_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+5V" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -6.35 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "GND" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "GND_1_1"
+        (pin power_in line (at 0 0 270) (length 0) hide
+          (name "GND" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+  )
+
+  (junction (at 134.239 95.504) (diameter 0) (color 0 0 0 0)
+    (uuid 72a2a90d-df3c-42d5-93c2-947b1dd06311)
+  )
+  (junction (at 100.584 95.504) (diameter 0) (color 0 0 0 0)
+    (uuid e44a7b9b-9f63-4a45-a315-64a57d3617a7)
+  )
+
+  (wire (pts (xy 124.079 95.504) (xy 134.239 95.504))
+    (stroke (width 0) (type default))
+    (uuid 07d83e7d-ba48-4ac4-be3d-e3bee3f77dcc)
+  )
+  (wire (pts (xy 134.239 104.394) (xy 134.239 105.664))
+    (stroke (width 0) (type default))
+    (uuid 0da5c474-4778-4abd-bbb6-67b789fb4102)
+  )
+  (wire (pts (xy 134.239 95.504) (xy 134.239 94.234))
+    (stroke (width 0) (type default))
+    (uuid 0e68c826-f4ab-41d8-af28-f100cdaee312)
+  )
+  (wire (pts (xy 100.584 95.504) (xy 100.584 96.774))
+    (stroke (width 0) (type default))
+    (uuid 3fbe5f50-df63-4c22-9f95-da9173dcc969)
+  )
+  (wire (pts (xy 100.584 94.234) (xy 100.584 95.504))
+    (stroke (width 0) (type default))
+    (uuid 4a6d4d8c-2fb3-4343-b41d-d6544d4f8334)
+  )
+  (wire (pts (xy 134.239 96.774) (xy 134.239 95.504))
+    (stroke (width 0) (type default))
+    (uuid 5219f264-1f19-4a0e-aa0d-efd9c106d980)
+  )
+  (wire (pts (xy 88.392 95.504) (xy 100.584 95.504))
+    (stroke (width 0) (type default))
+    (uuid 6ce46e6f-3c88-41dd-a343-283da3d2b44a)
+  )
+  (wire (pts (xy 134.239 95.504) (xy 144.78 95.504))
+    (stroke (width 0) (type default))
+    (uuid 9bb1ff57-a510-4bef-bdec-82c24ef103a1)
+  )
+  (wire (pts (xy 100.584 95.504) (xy 108.839 95.504))
+    (stroke (width 0) (type default))
+    (uuid ca000bdf-a9e1-4665-bcbd-e488cd906e13)
+  )
+  (wire (pts (xy 100.584 104.394) (xy 100.584 105.664))
+    (stroke (width 0) (type default))
+    (uuid d6854dda-9abf-484a-83cf-5625842b647c)
+  )
+
+  (symbol (lib_id "Device:C") (at 134.239 100.584 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0cb022ee-3498-4907-be9c-873625fda266)
+    (property "Reference" "C36" (at 137.16 99.4156 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 137.16 101.727 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 135.2042 104.394 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 134.239 100.584 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 2ae36a51-5bb4-465b-be17-afd96108f9c5))
+    (pin "2" (uuid 11c71093-a203-4a3d-8cec-e173c3a15189))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "C36") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "C9") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "C2") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "C35") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "C5") (unit 1)
+        )
+      )
+      (project "RP2040_minimal"
+        (path "/82a49de2-ec1b-43dd-97fe-0b636089eb84"
+          (reference "C4") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "C42") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "C10") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C") (at 100.584 100.584 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 16bdbb39-63cd-45f3-8d43-39a7094483ea)
+    (property "Reference" "C22" (at 103.505 99.4156 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "10u" (at 103.505 101.727 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 101.5492 104.394 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 100.584 100.584 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 19d83715-99e0-4d1c-bbc4-1f139f7c7d8b))
+    (pin "2" (uuid 6a3a4648-9c43-4d09-a797-2517fbcccf50))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "C22") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "C6") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "C1") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "C34") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "C3") (unit 1)
+        )
+      )
+      (project "RP2040_minimal"
+        (path "/82a49de2-ec1b-43dd-97fe-0b636089eb84"
+          (reference "C1") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "C41") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "C2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Barrel_Jack_Switch") (at 152.4 98.044 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 52403086-57b5-4ba2-bc47-625a01580aca)
+    (property "Reference" "J2" (at 159.004 99.314 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "Barrel_Jack_Switch" (at 159.004 96.774 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal" (at 151.13 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 151.13 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "3" (uuid be0173d8-f43d-46e8-b729-322f360b4a85))
+    (pin "2" (uuid 51471299-5d63-47a2-b04e-dff2c0e5ac1e))
+    (pin "1" (uuid a590b23e-69d1-4d69-b98d-f63075e00915))
+    (instances
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "J2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "PCM_4ms_Power-symbol:+12V") (at 100.584 94.234 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 70d1c23f-8c2a-4724-b02e-460f948e0de7)
+    (property "Reference" "#PWR0137" (at 100.584 98.044 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+12V" (at 98.044 90.424 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 100.584 94.234 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 100.584 94.234 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ec015430-8030-494c-81fc-50162153fa08))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "#PWR0137") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "#PWR049") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "#PWR01") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "#PWR026") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "#PWR094") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "#PWR065") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR032") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:Barrel_Jack_Switch") (at 80.772 98.044 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8c8b60c7-ecc5-46f8-af8e-2c2cea5b7fa4)
+    (property "Reference" "J1" (at 80.772 89.662 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Barrel_Jack_Switch" (at 80.772 92.202 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal" (at 82.042 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 82.042 99.06 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "3" (uuid 4c5f96cb-34f6-4a28-80f6-d0ab5f14adb4))
+    (pin "2" (uuid 7fc519fa-80aa-418a-9e75-bf7dee726b34))
+    (pin "1" (uuid bd601233-2534-4f04-ac05-e7d4dfdf8b38))
+    (instances
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "J1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 88.392 100.584 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid d1bd9e77-c7e7-4ed5-b334-639634b598a3)
+    (property "Reference" "#PWR0139" (at 88.392 106.934 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 88.392 105.029 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 88.392 100.584 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 88.392 100.584 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 77550ea2-e696-47af-af51-5b785b56faf1))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "#PWR0139") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "#PWR040") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "#PWR06") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "#PWR0159") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "#PWR013") (unit 1)
+        )
+      )
+      (project "RP2040_minimal"
+        (path "/82a49de2-ec1b-43dd-97fe-0b636089eb84"
+          (reference "#PWR04") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "#PWR073") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR028") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 134.239 94.234 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid da2fe1dd-98a1-4b01-97d2-042376cc38e8)
+    (property "Reference" "#PWR0140" (at 134.239 98.044 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 135.509 90.424 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 134.239 94.234 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.239 94.234 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0cbf012f-5a1f-47f3-8abd-d58a4b7b048b))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "#PWR0140") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "#PWR028") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "#PWR02") (unit 1)
+        )
+      )
+      (project "display_adapter"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR010") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 100.584 105.664 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid dcf1d035-a671-41ca-b475-809d7a698658)
+    (property "Reference" "#PWR0139" (at 100.584 112.014 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 100.584 110.109 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 100.584 105.664 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 100.584 105.664 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c4a0bd35-79bf-4582-b164-e311d2f80f5f))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "#PWR0139") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "#PWR040") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "#PWR04") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "#PWR0159") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "#PWR013") (unit 1)
+        )
+      )
+      (project "RP2040_minimal"
+        (path "/82a49de2-ec1b-43dd-97fe-0b636089eb84"
+          (reference "#PWR04") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "#PWR073") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR028") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 144.78 100.584 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid e63ce5f7-540b-4896-b739-3056644f1539)
+    (property "Reference" "#PWR0143" (at 144.78 106.934 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 144.78 105.029 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 144.78 100.584 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 144.78 100.584 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 39ec323b-eab0-4a7c-83ca-03fe28089618))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "#PWR0143") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "#PWR048") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "#PWR07") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "#PWR0160") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+      (project "RP2040_minimal"
+        (path "/82a49de2-ec1b-43dd-97fe-0b636089eb84"
+          (reference "#PWR010") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "#PWR074") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR034") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Regulator_Switching:R-783.3-1.0") (at 116.459 95.504 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f0149856-3891-454f-9035-410520135a1e)
+    (property "Reference" "U8" (at 116.459 89.154 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "R-785.0-1.0" (at 116.459 91.694 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" (at 117.729 101.854 0)
+      (effects (font (size 1.27 1.27) italic) (justify left) hide)
+    )
+    (property "Datasheet" "https://www.recom-power.com/pdf/Innoline/R-78xx-1.0.pdf" (at 116.459 95.504 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid 379e12f1-a483-43d2-8dcb-32b34626bafd))
+    (pin "1" (uuid 5344c352-8b87-488a-be11-34cf6c5c54ce))
+    (pin "3" (uuid 03d47d14-827b-45f1-8a0f-530147461746))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "U8") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "U1") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "U10") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "U6") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 134.239 105.664 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid f3470444-4262-4e32-991f-94dc87c5008a)
+    (property "Reference" "#PWR0143" (at 134.239 112.014 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 134.239 110.109 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 134.239 105.664 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 134.239 105.664 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid baa16b72-e79a-4552-81ee-598d4f404e03))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "#PWR0143") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "#PWR048") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "#PWR05") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "#PWR0160") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+      (project "RP2040_minimal"
+        (path "/82a49de2-ec1b-43dd-97fe-0b636089eb84"
+          (reference "#PWR010") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "#PWR074") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR034") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 116.459 103.124 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid fa4bb67e-8188-4dd7-b784-21915644edde)
+    (property "Reference" "#PWR0148" (at 116.459 109.474 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 116.459 107.569 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 116.459 103.124 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 116.459 103.124 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8572c3f5-eaae-48ab-b618-8c18959cd11b))
+    (instances
+      (project "jukebox_io"
+        (path "/1ad2d30c-97aa-48c8-a3a8-6ba6f6758644"
+          (reference "#PWR0148") (unit 1)
+        )
+      )
+      (project "jukebox_light_controller"
+        (path "/3d7cdb1e-a810-4ff2-a852-82c48438ee64"
+          (reference "#PWR048") (unit 1)
+        )
+      )
+      (project "dc_dc_jack_converter"
+        (path "/3e172b6e-3533-4e9e-936a-a37c5efa487e"
+          (reference "#PWR03") (unit 1)
+        )
+      )
+      (project "laser_controller"
+        (path "/66f4951c-8ca6-44d4-8426-28e02ddf3b18"
+          (reference "#PWR0160") (unit 1)
+        )
+      )
+      (project "canbus_adapter"
+        (path "/805386a4-6883-4c41-8ba1-2a13d67886f6"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+      (project "RP2040_minimal"
+        (path "/82a49de2-ec1b-43dd-97fe-0b636089eb84"
+          (reference "#PWR010") (unit 1)
+        )
+      )
+      (project "jukebox"
+        (path "/9fbba5d2-9fbd-4aa1-9b9e-8a8bf864eac7"
+          (reference "#PWR074") (unit 1)
+        )
+      )
+      (project "combo_laser_driver"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+          (reference "#PWR034") (unit 1)
+        )
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
